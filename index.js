@@ -20,7 +20,7 @@ console.log('isOpened', fptr.isOpened());
 
 setTimeout(() => {
     console.log('close', fptr.close());
-}, 10000)
+}, 300000)
 
 
 
