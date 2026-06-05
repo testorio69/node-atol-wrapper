@@ -1,12 +1,16 @@
 {
   "name": "node-atol-wrapper",
   "description": "Node ATOL DTO 10 wrapper",
-  "version": "0.0.32",
+  "version": "0.0.36",
   "main": "bindings.js",
   "types": "bindings.d.ts",
   "scripts": {
     "build": "node-gyp build",
+    "build:ia32": "node-gyp build --arch=ia32",
+    "build:x64": "node-gyp build --arch=x64",
     "install": "node-gyp rebuild",
+    "install:ia32": "node-gyp rebuild --arch=ia32",
+    "install:x64": "node-gyp rebuild --arch=x64",
     "start": "node ./index.js"
   },
   "dependencies": {
